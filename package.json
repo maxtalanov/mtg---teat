@@ -1,0 +1,34 @@
+{
+  "name": "mtg---teat",
+  "version": "1.0.0",
+  "description": "Тестовое задание для компании МТГ ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxtalanov/mtg---teat.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "typescript",
+    "spa",
+    "webpack"
+  ],
+  "author": {
+    "name": "Max Talanov",
+    "email": "mail@maxtalanov.ru",
+    "url": "https://maxtalanov.ru",
+    "github": "https://github.com/maxtalanov",
+    "organization": null,
+    "role": null,
+    "location": "Москва, Россия"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxtalanov/mtg---teat/issues"
+  },
+  "homepage": "https://github.com/maxtalanov/mtg---teat#readme"
+}
