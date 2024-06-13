@@ -24,10 +24,15 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    port: process.env.PORT || 9000
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    port: process.env.PORT || 9000,
+    open: true,
+    hot: true,
+    historyApiFallback: true,
   },
   plugins: [
     new Dotenv()
   ]
-};
+}
