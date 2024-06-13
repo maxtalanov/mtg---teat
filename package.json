@@ -4,7 +4,10 @@
   "description": "Тестовое задание для компании МТГ ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
