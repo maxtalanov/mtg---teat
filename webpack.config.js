@@ -1,5 +1,7 @@
-const path = require('path');
+require('dotenv').config()
+const path = require('path')
 const Dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -33,6 +35,11 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new Dotenv()
+    new Dotenv({
+      path: './.env'
+    }),
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    }),
   ]
 }
