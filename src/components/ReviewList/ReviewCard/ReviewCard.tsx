@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { formatClientName } from '../../../utils/formatClientName/formatClientName'
 import './ReviewCard.css'
 
 const styleName: string = 'review-card'
@@ -12,10 +13,10 @@ interface ReviewCardProps {
 class ReviewCard extends Component<ReviewCardProps> {
   render() {
     const { name, review, date } = this.props;
-
+    
     return (
       <div className={`${styleName}`}>
-        <h3 className={`${styleName}__user`}>{name}</h3>
+        <h3 className={`${styleName}__user`}>{formatClientName(name)}</h3>
         <p className={`${styleName}__review`}>{review}</p>
         <p className={`${styleName}__date`}>{date}</p>
       </div>
